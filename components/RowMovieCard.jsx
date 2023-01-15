@@ -1,7 +1,5 @@
 import React from "react";
 
-import placeholder from "../public/assets/placeholder.jpg";
-
 const RowMovieCard = ({ movie, setHeroMovie }) => {
   return (
     <div
@@ -20,7 +18,7 @@ const RowMovieCard = ({ movie, setHeroMovie }) => {
         src={
           movie?.backdrop_path
             ? `https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`
-            : placeholder
+            : "assets/placeholder.jpg"
         }
       />
     </div>
