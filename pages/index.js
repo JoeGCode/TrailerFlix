@@ -9,13 +9,6 @@ export default function Home({ moviesData, randomMovie }) {
   const [movies, setMovies] = useState(moviesData);
   const [heroMovie, setHeroMovie] = useState(null);
 
-  // useEffect(() => {
-  //   // Just so we don't do the same request twice
-  //   axios.get(requests.popular).then((response) => {
-  //     setMovies(response.data.results);
-  //   });
-  // }, []);
-
   return (
     <>
       <Hero movie={heroMovie || randomMovie} />
