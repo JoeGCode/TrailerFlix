@@ -11,11 +11,11 @@ const About = () => {
         This is a hobby project, built using{" "}
         <a
           className="underline"
-          href="https://reactjs.org/"
+          href="https://nextjs.org/"
           target="_blank"
           rel="noreferrer"
         >
-          ReactJS
+          NextJS
         </a>{" "}
         and{" "}
         <a
