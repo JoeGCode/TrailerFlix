@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useState } from "react";
 import { Movie } from "../types/movies";
 import useMovies from "../hooks/useMovies";

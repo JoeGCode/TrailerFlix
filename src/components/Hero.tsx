@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Movie } from "../types/movies";
 import Loader from "./Loader";
 import { MovieVideo } from "../types/movie_videos";
