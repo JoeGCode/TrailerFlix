@@ -3,6 +3,7 @@ import { Movie } from "../types/movies";
 import Loader from "./Loader";
 import { MovieVideo } from "../types/movie_videos";
 import { MdPlayCircle } from "react-icons/md";
+import MovieBackdrop from "./MovieBackdrop";
 
 type HeroProps = {
   movie: Movie | null;
@@ -64,11 +65,7 @@ export default function Hero({ movie, isLoading = false }: HeroProps) {
       {!isLoading && movie && (
         <div>
           {/* Background Image */}
-          <img
-            src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
-            alt="Hero background"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
+          <MovieBackdrop movie={movie} />
 
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Movie } from "../types/movies";
+import MoviePoster from "./MoviePoster";
 
 type MoviesRowCardType = {
   movie: Movie;
@@ -21,11 +22,7 @@ const MoviesRowCard = ({ movie, setHeroMovie }: MoviesRowCardType) => {
             </span>
           </p>
         </div>
-        <img
-          src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
-          alt={movie.title}
-          className="h-full w-full object-cover"
-        />
+        <MoviePoster movie={movie} />
       </div>
     </div>
   );
